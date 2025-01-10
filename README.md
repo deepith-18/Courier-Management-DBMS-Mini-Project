@@ -1,1 +1,3 @@
 # Courier-Management-DBMS-Mini-Project
+This has different type of code for frontend python and backend MYsql 9.0
+This project contains different type of codes with different design each...
