@@ -110,7 +110,35 @@ Step 4: Ensure MySQL Server is Running
 Step 5: Automatic Database/Table Creation
 
     The script is designed to automatically create the courier_management database and the user and orders tables the first time it successfully connects using the credentials you provided in Step 3. Ensure the MySQL user has the necessary permissions (CREATE DATABASE, CREATE TABLE).
+Database Schema
 
+The script creates the following tables in the courier_management database:
+
+    user
+
+        username VARCHAR(50) NOT NULL
+
+        password VARCHAR(50) NOT NULL (Stores password in plain text - SECURITY RISK)
+
+        mobile VARCHAR(15) NOT NULL
+
+    orders
+
+        id INT AUTO_INCREMENT PRIMARY KEY
+
+        username VARCHAR(50)
+
+        mobile VARCHAR(15)
+
+        address TEXT
+
+        date DATE
+
+        product_id VARCHAR(50)
+
+        product_name VARCHAR(100)
+
+        quantity INT
 Running the Application
 
     Open Terminal: Open your terminal or command prompt.
